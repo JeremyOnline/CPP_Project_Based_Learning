@@ -3,14 +3,38 @@
 using namespace std;
 
 int main(){
-    int n;
+    int input;
     cout << "Enter the number of elements: ";
-    cin >> n;
+    cin >> input;
+    int space;
+    space = input;
+    cout << "Spasi : " << &space << endl;
+    cout << "input : " << &input << endl;
     
-    for(int i = 1; i <= n; i++){
-        for(int j = 1; j <= i; j++){
+    
+    /*
+       ***
+       ***
+       ***
+    *********
+    *********
+       ***
+       ***
+       ***
+       ***
+       ***
+       ***
+    */
+
+    for (int height = 1; height <= 4*input; height++){
+        for(int spasi_1 = 1; spasi_1 <= space; spasi_1++){
+            cout << " ";
+        }
+        for(int column = 1; column <= space; column++){
             cout << "*";
         }
-        cout << endl;
+        cout << endl;  
     }
+    
+
 }
