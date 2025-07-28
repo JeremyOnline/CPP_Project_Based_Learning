@@ -27,20 +27,46 @@ int main(){
        ***
     */
 
-    for (int height = 1; height <= 4*input; height++){
+    // Atas
+    for (int height = 1; height <= input; height++){
         
 
         for(int spasi_1 = 1; spasi_1 <= space; spasi_1++){
             cout << " ";
-            if(spasi_1 = input){
-                cout << "*";
-            }
         }
         for(int column = 1; column <= input; column++){
             cout << column;
         }
+        
         cout << endl;  
     }
+
+    // Tengah
+    for (int height = 1; height <= input - 1; height++){
+        for(int column = 1; column <= input*3; column++){
+            cout << column;
+        }
+        cout << endl;
+    }
     
+    // Bawah
+    for (int height = 1; height <= input*2; height++){
+        
+
+        for(int spasi_1 = 1; spasi_1 <= space; spasi_1++){
+            cout << " ";
+        }
+        for(int column = 1; column <= input; column++){
+            cout << column;
+        }
+        
+        cout << endl;  
+    }
+
 
 }
+
+// 28/07/2025
+/*
+Input harus 2-3
+*/
